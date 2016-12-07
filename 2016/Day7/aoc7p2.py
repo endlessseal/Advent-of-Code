@@ -23,7 +23,7 @@ def validate(word):
 def relationship(l1,l2):
     for each in l1:
         for every in l2:
-            if each[0:1] == every[1:2]:
+            if each[0:2] == every[1:3]:
                 return True
     return False
 
@@ -35,6 +35,3 @@ with open('aoc7.txt','r') as fp:
         if relationship([y for x in sb for y in x if x], [y for x in nsb for y in x if x]):
             count += 1
 print(count)
-
-                
-            
